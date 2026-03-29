@@ -1,0 +1,93 @@
+# =========================
+
+# Python Backend
+
+# =========================
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables
+
+.env
+.env.*
+
+# Python build files
+
+build/
+dist/
+*.egg-info/
+
+# Logs
+
+*.log
+
+# =========================
+
+# Node / Next.js Frontend
+
+# =========================
+
+node_modules/
+
+# Next.js build output
+
+.next/
+out/
+build/
+
+# Package manager logs
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+
+# Project Generated Files
+
+# =========================
+
+uploads/
+processed_notes/
+temp/
+cache/
+
+# =========================
+
+# OS Files
+
+# =========================
+
+.DS_Store
+Thumbs.db
+
+# =========================
+
+# IDE / Editor
+
+# =========================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+
+# Misc
+
+# =========================
+
+coverage/
+*.sqlite3
+*.db

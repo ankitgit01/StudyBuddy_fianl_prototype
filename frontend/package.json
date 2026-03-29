@@ -1,0 +1,25 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "autoprefixer": "^10.4.27",
+    "next": "14.2.35",
+    "postcss": "^8.5.8",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hot-toast": "^2.6.0",
+    "recharts": "^3.8.0",
+    "tailwindcss": "^4.2.2",
+    "react-markdown": "^10.1.0",
+    "remark-math": "^6.0.0",
+    "remark-gfm": "^4.0.1"
+  }
+}
