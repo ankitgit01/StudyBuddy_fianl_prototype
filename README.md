@@ -5,6 +5,11 @@
 
 ---
 
+```markdown
+🔗 Live Demo: <your deployed link>  
+🎥 Demo Video: <your video link>
+```
+
 ## 🚀 Overview
 
 StudyBuddy is an AI-driven learning platform designed to transform how students study, understand, and improve.
@@ -16,6 +21,69 @@ Unlike traditional tools that only deliver content, StudyBuddy focuses on **unde
 - Personalized learning pipelines  
 
 ---
+
+## ▶️ How to Run the Project
+
+Follow these steps to run StudyBuddy locally:
+
+---
+
+### 🔹 1. Clone the Repository
+
+```bash
+git clone <YOUR_REPO_LINK>
+cd <PROJECT_FOLDER>
+```
+
+---
+
+### 🔹 2. Backend Setup (FastAPI)
+
+Navigate to the backend folder:
+```bash
+cd backend
+```
+
+Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+Run the server:
+```bash
+uvicorn main:app --reload
+```
+
+👉 **Backend will run at:** [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+---
+
+### 🔹 3. Frontend Setup (React / Next.js)
+
+Open a **new terminal** and navigate to the frontend folder:
+```bash
+cd frontend
+```
+
+Install the required dependencies:
+```bash
+npm install
+```
+
+Run the frontend:
+```bash
+npm run dev
+```
+
+👉 **Visit in browser:** [http://localhost:3000](http://localhost:3000)
+
+---
+
+#### ⚠️ Notes
+
+* Make sure the backend is running before starting the frontend.
+* Ensure all environment variables (API keys for Azure / GPT) are configured.
+* Use Python 3.9+ and Node.js 18+ for the best compatibility.
 
 ## 🎯 Problem
 
