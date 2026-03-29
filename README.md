@@ -1,4 +1,4 @@
-# 🧠 StudyBuddy  
+# 🧠 Gyaani AI
 ### AI-Powered Personalized Learning & Cognitive Insight System  
 
 > From Notes → Understanding → Personalization → Insight  
