@@ -6,8 +6,8 @@
 ---
 
 ```markdown
-🔗 Live Demo: <your deployed link>  
-🎥 Demo Video: <your video link>
+🔗 Live URL: http://20.41.121.245:3000  
+🎥 Demo Video: 
 ```
 
 ## 🚀 Overview
