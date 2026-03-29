@@ -211,9 +211,108 @@ It enables:
 
 ---
 
+### AI and ML
+
+- OpenAI
+- Azure AI services for OCR, speech, translation, and safety
+- XGBoost and scikit-learn based prediction pipelines
+
+## Project Structure
+
+```text
+mainx_ankit/
+|- backend/
+|- frontend/
+|- README.md
+|- requirements.txt
+```
+
+## Local Development Setup
+
+### Prerequisites
+
+- Node.js 18 or later
+- Python 3.10 or later
+- Azure services configured for the backend integrations
+
+## Installation
+
+### Backend Setup
+
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r ..\requirements.txt
+```
+
+If you are using macOS or Linux, activate the environment with:
+
+```bash
+source venv/bin/activate
+```
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+```
+
+## Environment Variables
+
+This repo currently includes local env files:
+
+- `backend/.env`
+- `frontend/.env.local`
+
+Make sure they contain the keys required for your Azure and OpenAI services before starting the app.
+
+## Run the Application
+
+### Start the backend
+
+```bash
+cd backend
+uvicorn main:app --reload
+```
+
+### Start the frontend
+
+```bash
+cd frontend
+npm run dev
+```
+
+## Project Highlights
+
+- Converts messy notes into structured knowledge.
+- Surfaces weak learning areas visually.
+- Supports multilingual learning workflows.
+- Adapts quizzes and content to learner performance.
+- Tracks study behavior for predictive insights.
+
+## Vision
+
+GYAANI AI aims to make education more personalized, adaptive, multilingual, and intelligent.
+
+Learning flow:
+
+```text
+Input -> Understanding -> Mastery -> Growth
+```
+
+## Contributing
+
+Contributions are welcome through feature branches and pull requests.
+
 ## 📌 Future Scope
 
 - Real-time adaptive learning paths  
 - Institutional deployment (schools/colleges)  
 - Advanced mental health insights  
 - AI-driven mentorship system  
+
+## License
+
+This project is licensed under the MIT License.
