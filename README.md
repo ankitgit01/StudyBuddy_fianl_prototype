@@ -1,16 +1,12 @@
-# 🧠 Gyaani AI
+# Gyaani AI
 ### AI-Powered Personalized Learning & Cognitive Insight System  
-
-> From Notes → Understanding → Personalization → Insight  
-
----
 
 ```markdown
 🔗 Live URL: http://20.41.121.245:3000  
 🎥 Demo Video: 
 ```
 
-## 🚀 Overview
+## Overview
 
 StudyBuddy is an AI-driven learning platform designed to transform how students study, understand, and improve.
 
@@ -22,60 +18,54 @@ Unlike traditional tools that only deliver content, StudyBuddy focuses on **unde
 
 ---
 
-## ▶️ How to Run the Project
-
-Follow these steps to run StudyBuddy locally:
-
----
-
-### 🔹 1. Clone the Repository
-
+## ▶️ How to Run the Project locally (Note that Deployed URL is given above if just frontend walkthrough is needed)
+### 1. Clone the Repository
 ```bash
 git clone <YOUR_REPO_LINK>
 cd <PROJECT_FOLDER>
 ```
 
----
-
-### 🔹 2. Backend Setup (FastAPI)
-
-Navigate to the backend folder:
+### Install Dependencies and activate venv
 ```bash
 cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r ..\requirements.txt
 ```
 
-Install the required dependencies:
+If you are using macOS or Linux, activate the environment with:
+
 ```bash
-pip install -r requirements.txt
+source venv/bin/activate
 ```
 
-Run the server:
-```bash
-uvicorn main:app --reload
-```
+### Frontend Setup (in a separate terminal)
 
-👉 **Backend will run at:** [http://127.0.0.1:8000](http://127.0.0.1:8000)
-
----
-
-### 🔹 3. Frontend Setup (React / Next.js)
-
-Open a **new terminal** and navigate to the frontend folder:
 ```bash
 cd frontend
-```
-
-Install the required dependencies:
-```bash
 npm install
 ```
 
-Run the frontend:
+## Environment Variables
+Make sure to create yourn own .env files and keep the keys required for your Azure and OpenAI services before starting the app.
+
+## Run the Application
+
+### Start the backend
+
 ```bash
+cd backend
+uvicorn main:app --reload
+```
+👉 **Backend will run at:** [localhost:8000]
+
+### Start the frontend (in the second Terminal)
+
+```bash
+cd frontend
 npm run dev
 ```
-
-👉 **Visit in browser:** [http://localhost:3000](http://localhost:3000)
+👉 **Visit in browser:** [localhost:3000]
 
 ---
 
@@ -93,8 +83,7 @@ Students often:
 - Study without structured guidance  
 - Lack personalized feedback  
 - Experience stress without awareness  
-
-Current solutions focus on *content*, not *comprehension or cognition*.
+- Current solutions focus on *content*, not *comprehension or cognition*.
 
 ---
 
@@ -125,7 +114,7 @@ StudyBuddy converts raw study inputs into:
 
 ---
 
-### 🔥 Cognitive Analysis (Key Innovation)
+### 🔥 Cognitive Analysis
 - Confusion Heatmap (detects unclear regions in notes)
 - Behavioral Signals Extraction:
   - Quiz patterns  
@@ -142,8 +131,7 @@ StudyBuddy converts raw study inputs into:
 
 ---
 
-### 🧩 Learning System
-- Constellation Graph (topic dependency mapping)
+### 🧩 Interactive Constellation (topic) Graph
 - Dynamic node states (progress tracking)
 - Direct navigation to notes & content generation
 
@@ -183,12 +171,13 @@ StudyBuddy converts raw study inputs into:
 - Azure Blob Storage → Notes & media  
 - Azure Cosmos DB → User & metadata  
 - GPT-4.1 → Explanation, quiz, chat  
-- Azure Vision → OCR  
-- Azure Speech → Voice interaction  
+- Azure Vision → OCR
+- Azure Translato → Multilingual support
+- Azure Speech → Voice interaction 
 
 ---
 
-## 🚀 Impact
+## Impact
 
 StudyBuddy shifts learning from:
 **“What you study” → to → “How well you understand”**
@@ -235,55 +224,6 @@ mainx_ankit/
 - Python 3.10 or later
 - Azure services configured for the backend integrations
 
-## Installation
-
-### Backend Setup
-
-```bash
-cd backend
-python -m venv venv
-venv\Scripts\activate
-pip install -r ..\requirements.txt
-```
-
-If you are using macOS or Linux, activate the environment with:
-
-```bash
-source venv/bin/activate
-```
-
-### Frontend Setup
-
-```bash
-cd frontend
-npm install
-```
-
-## Environment Variables
-
-This repo currently includes local env files:
-
-- `backend/.env`
-- `frontend/.env.local`
-
-Make sure they contain the keys required for your Azure and OpenAI services before starting the app.
-
-## Run the Application
-
-### Start the backend
-
-```bash
-cd backend
-uvicorn main:app --reload
-```
-
-### Start the frontend
-
-```bash
-cd frontend
-npm run dev
-```
-
 ## Project Highlights
 
 - Converts messy notes into structured knowledge.
@@ -301,18 +241,3 @@ Learning flow:
 ```text
 Input -> Understanding -> Mastery -> Growth
 ```
-
-## Contributing
-
-Contributions are welcome through feature branches and pull requests.
-
-## 📌 Future Scope
-
-- Real-time adaptive learning paths  
-- Institutional deployment (schools/colleges)  
-- Advanced mental health insights  
-- AI-driven mentorship system  
-
-## License
-
-This project is licensed under the MIT License.
