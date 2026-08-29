@@ -3,7 +3,7 @@
 
 ```markdown
 🔗 Live URL: http://20.41.121.245:3000  
-🎥 Demo Video: https://youtu.be/cezZ2SDWq6Q
+🎥 Demo Video:
 ```
 
 ## Overview
